@@ -11,12 +11,14 @@ mpiNtasks=128
 ##########################
 
 #Clean env of other conda modules or installations:
-conda deactivate
+## Deactivate your existing conda environment - uncomment the below line if you have a conda environemnt automatically loaded through your ~/.bashrc
+#conda deactivate
 module purge
 
 #Load the InfiniBand-supported MPI-library and the python environment to run MPI with python:
 module load discovery gcc/7.3.0 mpich/3.3.2-skylake-gcc7.3
-module load miniconda3/2020-11-skylake
+module load anaconda3/2019.10-HPCtraining
+source activate hpc-training
 
 #Test number of MPI tasks between 1 and 128 (mult by 2):
 for (( nTasks=1; nTasks<=$mpiNtasks; nTasks=$nTasks*2 ))
