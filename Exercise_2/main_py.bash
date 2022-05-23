@@ -1,11 +1,9 @@
 #!/bin/bash 
-
-###################################
-#SBATCH --job-name=exercise2
+#SBATCH --job-name=exercise2	## set job name
 ##SBATCH --nodes=1		## uncomment this line - does performance improve?
 #SBATCH --ntasks=128		#request 128 tasks that will allocate 1 cpu per task 
-#SBATCH --time=00:20:00
-#SBATCH --partition=express
+#SBATCH --time=00:20:00		#request 20 minutes job time limit
+#SBATCH --partition=express	#run on partition "express"
 
 ######## change number of MPI tasks here: #################
 mpiNtasks=128
