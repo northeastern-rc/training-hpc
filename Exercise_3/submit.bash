@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH -J getMax  
-#SBATCH --partition=debug
-#SBATCH --nodes=1
-#SBATCH --ntasks=1
-#SBATCH --array=1-4%4 #create 4 array jobs, run all 4 at a time.
-#SBATCH --output=%A-%a.out
-#SBATCH --error=%A-%a.err
+#SBATCH -J getMax 		##set job name 
+#SBATCH --partition=debug	#set partition name to "debug" (very short runs)
+#SBATCH --nodes=1		#set node number to 1
+#SBATCH --ntasks=1		#set number of tasks (CPUs) to 1
+#SBATCH --array=1-4%4 		#create 4 array jobs, run all 4 at a time.
+#SBATCH --output=%A-%a.out	#set output filename with main job ID and task array ID
+#SBATCH --error=%A-%a.err	#set error filename with main job ID and task array ID
 
 #Clean env of other conda modules or installations:
 conda deactivate
