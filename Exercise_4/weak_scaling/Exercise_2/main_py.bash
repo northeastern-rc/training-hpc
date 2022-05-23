@@ -2,7 +2,7 @@
 #SBATCH --job-name=exercise3_2
 ##SBATCH --nodes=1  ##uncomment and check performance
 #SBATCH --ntasks=128
-#SBATCH --time=04:00:00
+#SBATCH --time=24:00:00
 #SBATCH --partition=short
 
 ######## Weak Scaling - define initial data size: #########
@@ -13,7 +13,8 @@ mpiNtasks=128
 ##########################
 
 #Clean env of other conda modules or installations:
-conda deactivate
+## Deactivate your existing conda environment - uncomment the below line if you have a conda environemnt automatically loaded through your ~/.bashrc
+#conda deactivate
 module purge
 module load discovery
 
