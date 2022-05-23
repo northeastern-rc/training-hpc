@@ -1,12 +1,10 @@
 #!/bin/bash 
-
-###################################
-#SBATCH --job-name=exercise1
+#SBATCH --job-name=exercise1	#name of the job
 #SBATCH --nodes=1		#make sure to request work on the same node!
 #SBATCH --ntasks=1		#define a single task associated with the main process
 #SBATCH --cpus-per-task=16	#define 16 cpus allocated for the task 
-#SBATCH --time=00:20:00
-#SBATCH --partition=express
+#SBATCH --time=00:20:00		#time limit of the job
+#SBATCH --partition=express	#use partition "express"
 
 ######## change number of OpenMP threads here: #################
 export OMP_NUM_THREADS=16
@@ -18,7 +16,7 @@ module purge
 ## Load modules and compilers ##
 module load discovery gcc/8.1.0
 
-## Compile code ##
+## Compile code (only needs to run once) ##
 g++ -o multVec -std=c++11 -Wall -Wextra -pedantic -fopenmp vecMult.cpp
 
 ## Run code on 1,2,4,8,16 threads: ##
