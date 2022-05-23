@@ -10,7 +10,8 @@ mpiNtasks=128
 ##########################
 
 #Clean env of other conda modules or installations:
-conda deactivate
+## Deactivate your existing conda environment - uncomment the below line if you have a conda environemnt automatically loaded through your ~/.bashrc
+#conda deactivate
 module purge
 
 #Load the python environment to run MPI with python:
