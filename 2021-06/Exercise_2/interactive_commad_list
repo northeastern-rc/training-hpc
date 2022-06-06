@@ -1,8 +1,0 @@
-cd $HOME/HPC_optimization_and_scalability
-cd Exercise_2
-cat main_py.bash
-cat main_py.bash
-sbatch main_py.bash
-
-squeue –u $USER --all
- 
