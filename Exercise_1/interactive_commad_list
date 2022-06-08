@@ -1,0 +1,8 @@
+cd $HOME/HPC_optimization_and_scalability
+cd Exercise_1
+cat vecMult.cpp
+cat submit.bash
+sbatch submit.bash
+squeue –u $USER --all
+
+ 
