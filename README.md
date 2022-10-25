@@ -1,10 +1,13 @@
-# Parallel Programming on Discovery
-This repository contains material for HPC Parallel Programming on Discovery
+# HPC & Parallel Computing
+This repository contains material for HPC Parallel Computing on Discovery
 training modules.
 
 ## What's in each training sub-folder?
-* Training PowerPoint slides
-* Exercise folders
+* Exercise_1 - OpenMP threads example
+* Exercise_2 - MPI with Python example (mpi4py)
+* Exercise_3 - Slurm job array example
+* Exercise_4 - Speendup, efficiency and weak scaling examples. 
+* Exercise_5 - Example of using InfiniBand-supported MPI.
 
 ## Steps to download and use the repo on Discovery
 1. Login to a Discovery shell or use the [Discovery OnDemand interface](https://rc-docs.northeastern.edu/en/latest/first_steps/connect_ood.html).
@@ -15,4 +18,4 @@ cd $HOME
 git clone git@github.com:northeastern-rc/training-hpc.git
 cd training-hpc
 ```
-3. Download the training slides to your local computer, where you have access to PowerPoint to open the slides. Follow the slides to execute different examples.
+3. Download the training slides to your local computer from the [RC Canvas course](https://northeastern.instructure.com/enroll/LNNCHN), where you have access to PowerPoint to open the slides. Follow the slides to execute different examples.
