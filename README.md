@@ -2,9 +2,9 @@
 This repository contains material for HPC and parallel computing on NU's high performance computing cluster training modules.
 
 ## What's in each training sub-folder?
-* Exercise_1 - OpenMP threads example
-* Exercise_2 - MPI with Python example (mpi4py)
-* Exercise_3 - Slurm job array example
+* Exercise_1 - OpenMP threads example.
+* Exercise_2 - MPI with Python example (mpi4py).
+* Exercise_3 - Slurm job array example.
 * Exercise_4 - Speedup, efficiency and weak scaling examples. 
 * Exercise_5 - Example of using InfiniBand-supported MPI.
 
