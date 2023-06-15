@@ -2,11 +2,10 @@ cd /scratch/$USER/training-hpc
 
 cd Exercise_2
 
-cat main_py.bash
+cat calcMatrix.py
 
 cat main_py.bash
 
 sbatch main_py.bash
 
 squeue –u $USER --all
- 
