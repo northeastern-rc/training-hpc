@@ -1,8 +1,13 @@
-cd $HOME/HPC_optimization_and_scalability
+cd /scratch/$USER/training-hpc
+
 cd Exercise_1
+
 cat vecMult.cpp
+
 cat submit.bash
+
 sbatch submit.bash
+
 squeue –u $USER --all
 
  

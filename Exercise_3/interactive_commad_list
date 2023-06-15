@@ -1,6 +1,0 @@
-cd $HOME/HPC_optimization_and_scalability
-cd Exercise_3
-cat submit.bash
-sbatch submit.bash
-squeue –u $USER --all 
- 
